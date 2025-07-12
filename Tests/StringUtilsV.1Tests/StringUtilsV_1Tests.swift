@@ -67,11 +67,4 @@ struct StringUtilsV_1 {
         #expect(StringUtils.endsWith(originalString, suffix: "lo") == true)
         #expect(StringUtils.endsWith(originalString, suffix: "        ") == false)
     }
-    
-    @Test func executeContainsTest()  {
-        let originalString = "HelloWorldllo"
-        #expect(StringUtils.contains(originalString, s: "dllo") == true)
-        #expect(StringUtils.contains(originalString, s: "la") == false)
-        #expect(StringUtils.contains(originalString, s: "o") == true)
-    }
 }

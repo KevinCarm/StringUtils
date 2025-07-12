@@ -128,15 +128,5 @@ struct StringUtils {
         }
         return false
     }
-    
-    public static func contains(_ value: String, s: String) -> Bool {
-        if isEmpty(value) {
-            return true
-        } else if s.count > value.count {
-            return false
-        }
-        let end = subString(value, start: value.count - s.count)
-        return end == s
-    }
 }
 
